@@ -4,7 +4,6 @@ const apiKey = 'e3b8bd27aaa26d31be8e66dd93093f79';
 const citySubmit = document.querySelector('#city-submit');
 const cityInput = document.querySelector('#city-input');
 
-
 const citySubmitHanlder = (event) => {
 
   event.preventDefault();
@@ -13,6 +12,7 @@ const citySubmitHanlder = (event) => {
 
   if (cityName) {
     getCurrentWeather(cityName);
+    searchHistory(cityName);
     cityInput.value = '';
   } else {
     alert('Please enter a city.');
@@ -21,9 +21,13 @@ const citySubmitHanlder = (event) => {
 };
 
 //Search history
-const searchHistory = () => {
+const searchHistory = (cityName) => {
 
+  let recentSearch = document.querySelector('#search-history');
 
+  let displaySearchHistory = document.createElement('li');
+  displaySearchHistory.textContent = cityName;
+  recentSearch.appendChild(displaySearchHistory);
 
 }
 
