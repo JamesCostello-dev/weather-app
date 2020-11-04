@@ -1,46 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
   <title>Weather App</title>
+
 </head>
+
 <body>
 
-  <div class="card-header">
-  <nav class="navbar navbar-dark bg-dark">
-    <h1 style="color: whitesmoke">Weather App</h1>
-  </nav>
-  </div>
+  <!DOCTYPE html>
+  <html lang="en">
 
-  <main class="flex-row justify-space-between">
-    <div class="card-body">
-    <div class="col-12 col-md-3">
-      <div class="card">
-  <h3 class="card-header text-uppercase">Search By City</h3>
-  <form id="city-form" class="card-body">
-    <input name="city" id="city" type="text" autofocus="true" class="form-input" />
-   <button type="button" class="btn btn-primary">Search<span class="badge badge-light"></span>
-</button>
-  </form>
-<ul class="list-group">
-  <li class="list-group-item">Test</li>
-</ul>
-</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="col-12 col-md-8">
-      <div class="col-12 col-md-8">
-  <h2 class="City"><span id="city-search"></span></h2>
-  <div id="city-container" class="list-group"></div>
-</div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+
+    <!-- nav bar -->
+    <nav class=" navbar navbar-dark bg-dark justify-content-center">
+      <header class="navbar-brand">Weather Dashboard</header>
+    </nav>
+
+    <!-- main -->
+    <div class="container-fluid col-12 row justify-content-center">
+
+      <div class="container-fluid col-2 row">
+        <form class="form-inline">
+          <input id="city-input" class="form-control mr-sm-1"><button id='city-submit'
+            class="btn btn-outline-success my-2 my-sm-0" type="submit">Q</button>
+        </form>
+        <ul class="list-group" id="search-history"></ul>
+      </div>
+
+      <div class="container-fluid col-10 row">
+        <div class="card bg-light col-10 row">
+          <div class="card-body ">
+            <h1 class="card-title" id="city-name"></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid col-10 row justify-content-center">
+        <div class="card bg-light col-md-2">
+          <div class="card-body">
+            <h5 class="card-title" id="card-date-0"> </h5>
+            <h7 class="card-h3" id="card-temp-0"> </h7>
+            <h7 class="card-h3" id="card-hum-0"> </h7>
+          </div>
+        </div>
+
+        <div class="card bg-light col-md-2">
+          <div class="card-body">
+            <h5 class="card-title" id="card-date-1"> </h5>
+            <h7 class="card-h3" id="card-temp-1"> </h7>
+            <h7 class="card-h3" id="card-hum-1"> </h7>
+          </div>
+        </div>
+
+        <div class="card bg-light col-md-2">
+          <div class="card-body">
+            <h5 class="card-title" id="card-date-2"></h5>
+            <h7 class="card-h3" id="card-temp-2"></h7>
+            <h7 class="card-h3" id="card-hum-2"></h7>
+          </div>
+        </div>
+
+        <div class="card bg-light col-md-2">
+          <div class="card-body">
+            <h5 class="card-title" id="card-date-3"> </h5>
+            <h7 class="card-h3" id="card-temp-3"> </h7>
+            <h7 class="card-h3" id="card-hum-3"> </h7>
+          </div>
+        </div>
+
+        <div class="card bg-light col-md-2">
+          <div class="card-body">
+            <h5 class="card-title" id="card-date-4"> </h5>
+            <h7 class="card-h3" id="card-temp-4"> </h7>
+            <h7 class="card-h3" id="card-hum-4"> </h7>
+          </div>
+        </div>
+      </div>
     </div>
 
-</main>
 
 
-<script src="assets/js/script.js"></script>
-</body>
-</html>
+
+
+    <script src="assets/js/script.js"></script>
+  </body>
+
+  </html>
