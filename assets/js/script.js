@@ -20,13 +20,16 @@ const citySubmitHanlder = (event) => {
   //console.log(event);
 };
 
+
 //Search history
 const searchHistory = (cityName) => {
 
   let recentSearch = document.querySelector('#search-history');
 
-  let displaySearchHistory = document.createElement('li');
+  let displaySearchHistory = document.createElement('button');
   displaySearchHistory.textContent = cityName;
+  displaySearchHistory.setAttribute('class', 'list-group-item');
+  displaySearchHistory.setAttribute('id', 'recentSearchHistory');
   recentSearch.appendChild(displaySearchHistory);
 
 }
@@ -130,5 +133,6 @@ const getCurrentWeather = (cityName) => {
       console.log(castData);
     })
 };
+
 
 citySubmit.addEventListener('click', citySubmitHanlder);
