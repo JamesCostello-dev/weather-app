@@ -21,7 +21,7 @@
 https://jamescostello-dev.github.io/weather-app/
 
 ## Img
-<img width="1315" alt="Screen Shot 2020-11-04 at 12 01 22 PM" src="https://user images.githubusercontent.com/28774706/98156973-d7896c00-1e95-11eb-8052-dbb2a9ff7a5f.png">
+<img width="1315" alt="Screen Shot 2020-11-04 at 12 01 22 PM" src="https://userimages.githubusercontent.com/28774706/98156973-d7896c00-1e95-11eb-8052-dbb2a9ff7a5f.png">
 
 ## Contribution 
 James Costello
